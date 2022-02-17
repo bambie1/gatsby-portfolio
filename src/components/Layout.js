@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 flex container justify-between items-center mx-auto py-4 pl-4 pr-5 z-10 backdrop-blur">
+      <nav className="container fixed top-0 left-0 right-0 z-10 mx-auto flex items-center justify-between py-4 pl-4 pr-5 backdrop-blur">
         <Link to="/">
           <StaticImage
             src="../images/icon.png"
@@ -22,9 +22,15 @@ const Layout = ({ children }) => {
             alt="Brand logo"
           />
         </Link>
-        <FontAwesomeIcon icon={faMoon} className="md:hidden text-2xl" />
+        <FontAwesomeIcon icon={faMoon} className="text-2xl md:hidden" />
 
-        <ul className=" hidden md:flex gap-8">
+        <ul className=" hidden gap-8 md:flex">
+          <li className="flex items-center">
+            <FontAwesomeIcon
+              icon={faMoon}
+              className="mr-8 hidden cursor-pointer rounded-lg border p-1 text-xl md:flex"
+            />
+          </li>
           <li>
             <Link
               to="/about"
@@ -55,12 +61,12 @@ const Layout = ({ children }) => {
         </ul>
       </nav>
 
-      <div className=" container mx-auto px-5 w-full flex flex-col justify-between min-h-screen">
+      <div className=" container mx-auto flex min-h-screen w-full flex-col justify-between px-5">
         <main className="my-28">
           {children}
 
-          <div className="container mx-auto w-auto left-3 right-3 fixed h-16 backdrop-blur-3xl bottom-4 flex items-center px-3 rounded-lg shadow-3xl z-10 md:hidden">
-            <ul className="flex gap-8 h-[100%] w-[100%] text-sm items-center justify-evenly overflow-hidden">
+          <div className="shadow-3xl container fixed left-3 right-3 bottom-4 z-10 mx-auto flex h-16 w-auto items-center rounded-lg px-3 backdrop-blur-3xl md:hidden">
+            <ul className="flex h-[100%] w-[100%] items-center justify-evenly gap-8 overflow-hidden text-sm">
               <li>
                 <Link
                   to="/about"

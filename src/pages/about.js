@@ -14,8 +14,8 @@ const AboutPage = () => {
         <title>About Me | Benaiah Barango</title>
       </Helmet>
       <Layout>
-        <div className="grid gap-4 md:grid-cols-2 grid-rows-1">
-          <div className="grid gap-4 content-center">
+        <div className="grid grid-rows-1 gap-4 md:grid-cols-2">
+          <div className="grid content-center gap-4">
             <h1 className="text-5xl font-bold">WHO AM I?</h1>
             <p className="text-gray mb-4">Who are we all, really..?</p>
 
@@ -48,14 +48,14 @@ const AboutPage = () => {
             <SocialLinks row />
           </div>
 
-          <div className="flex md:items-center justify-center order-first h-[200px] overflow-hidden items-start  justify-self-center rounded-[56px] md:h-auto md:rounded-none md:order-2 mb-10 md:mb-0">
+          <div className="order-first mb-10 flex h-[200px] items-start justify-center justify-self-center  overflow-hidden rounded-[56px] md:order-2 md:mb-0 md:h-auto md:items-center md:rounded-none">
             <StaticImage
               src="../images/profile.jpg"
               alt="Profile picture"
               placeholder="blurred"
               width={300}
               height={400}
-              className="rounded-full"
+              className="rounded-full shadow-lg"
             />
           </div>
         </div>
