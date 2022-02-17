@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "gatsby";
 import "@fontsource/fira-code";
 import { StaticImage } from "gatsby-plugin-image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoon } from "@fortawesome/free-regular-svg-icons";
 
 const Layout = ({ children }) => {
   const linkStyle = `
@@ -20,6 +22,8 @@ const Layout = ({ children }) => {
             alt="Brand logo"
           />
         </Link>
+        <FontAwesomeIcon icon={faMoon} className="md:hidden text-2xl" />
+
         <ul className=" hidden md:flex gap-8">
           <li>
             <Link
@@ -52,7 +56,41 @@ const Layout = ({ children }) => {
       </nav>
 
       <div className=" container mx-auto px-5 w-full flex flex-col justify-between min-h-screen">
-        <main className="my-40">{children}</main>
+        <main className="my-28">
+          {children}
+
+          <div className="left-3 right-3 fixed h-16 backdrop-blur-3xl bottom-1 flex items-center px-3 rounded-lg shadow-3xl z-10 md:hidden">
+            <ul className="flex gap-8 h-[100%] w-[100%] text-sm items-center justify-evenly overflow-hidden">
+              <li>
+                <Link
+                  to="/about"
+                  className={linkStyle}
+                  activeClassName={activeStyle}
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/portfolio"
+                  className={linkStyle}
+                  activeClassName={activeStyle}
+                >
+                  Portfolio
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  className={linkStyle}
+                  activeClassName={activeStyle}
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </main>
 
         <footer>
           <p>Copyright {new Date().getFullYear()}</p>

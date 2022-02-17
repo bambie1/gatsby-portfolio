@@ -82,7 +82,7 @@ const AboutPage = () => {
             </div>
           </div>
 
-          <div className="flex items-center justify-center order-first md:order-2 mb-10 md:mb-0">
+          <div className="flex md:items-center justify-center order-first h-[200px] overflow-hidden items-start  justify-self-center rounded-[56px] md:h-auto md:rounded-none md:order-2 mb-10 md:mb-0">
             <StaticImage
               src="../images/profile.jpg"
               alt="Profile picture"

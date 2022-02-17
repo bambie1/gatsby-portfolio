@@ -23,7 +23,7 @@ const ContactPage = () => {
 
             <form className="grid gap-4 w-full place-items-start max-w-md mt-5">
               <input
-                class={inputStyle}
+                className={inputStyle}
                 type="text"
                 aria-label="E-mail address"
                 placeholder="E-mail address..."
