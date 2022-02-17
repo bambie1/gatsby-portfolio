@@ -59,7 +59,7 @@ const Layout = ({ children }) => {
         <main className="my-28">
           {children}
 
-          <div className="left-3 right-3 fixed h-16 backdrop-blur-3xl bottom-1 flex items-center px-3 rounded-lg shadow-3xl z-10 md:hidden">
+          <div className="container mx-auto w-auto left-3 right-3 fixed h-16 backdrop-blur-3xl bottom-4 flex items-center px-3 rounded-lg shadow-3xl z-10 md:hidden">
             <ul className="flex gap-8 h-[100%] w-[100%] text-sm items-center justify-evenly overflow-hidden">
               <li>
                 <Link
@@ -92,7 +92,7 @@ const Layout = ({ children }) => {
           </div>
         </main>
 
-        <footer>
+        <footer className="mb-24 md:mb-0">
           <p>Copyright {new Date().getFullYear()}</p>
         </footer>
       </div>
