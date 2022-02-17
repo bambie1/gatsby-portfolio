@@ -10,9 +10,13 @@ const linkStyle = `
 px-4 py-2 border-2 rounded-full text-xl hover:text-gray
 `;
 
-const SocialLinks = () => {
+const SocialLinks = ({ row }) => {
   return (
-    <div className="flex md:flex-col md:items-end md:justify-center gap-4 mt-10 md:mt-0">
+    <div
+      className={`flex ${row ? "" : "md:flex-col"} md:items-end ${
+        row ? "mt-8" : "md:justify-center"
+      } gap-4 mt-10 md:mt-0`}
+    >
       <a
         href="https://www.linkedin.com/in/benaiah-ambie-barango/"
         target="_blank"

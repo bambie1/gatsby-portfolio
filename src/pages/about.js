@@ -1,19 +1,10 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { StaticImage } from "gatsby-plugin-image";
-import {
-  faGithub,
-  faLinkedinIn,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Layout from "../components/Layout";
 import TextLink from "../components/TextLink";
-
-const linkStyle = `
-px-6 py-4 border-2 rounded-full text-3xl
-`;
+import SocialLinks from "../components/SocialLinks";
 
 const AboutPage = () => {
   return (
@@ -54,32 +45,7 @@ const AboutPage = () => {
               table-tennis. Slicing... smashing... spinning.
             </p>
 
-            <div className="flex mt-5 gap-4">
-              <a
-                href="https://www.linkedin.com/in/benaiah-ambie-barango/"
-                target="_blank"
-                rel="noreferrer"
-                className={linkStyle}
-              >
-                <FontAwesomeIcon icon={faLinkedinIn} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/benaiah-ambie-barango/"
-                target="_blank"
-                rel="noreferrer"
-                className={linkStyle}
-              >
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/benaiah-ambie-barango/"
-                target="_blank"
-                rel="noreferrer"
-                className={linkStyle}
-              >
-                <FontAwesomeIcon icon={faTwitter} />
-              </a>
-            </div>
+            <SocialLinks row />
           </div>
 
           <div className="flex md:items-center justify-center order-first h-[200px] overflow-hidden items-start  justify-self-center rounded-[56px] md:h-auto md:rounded-none md:order-2 mb-10 md:mb-0">
