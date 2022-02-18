@@ -24,7 +24,7 @@ const PortfolioPage = () => {
       </Helmet>
       <Layout>
         <div className="grid gap-4 ">
-          <div className="flex w-full justify-between gap-5 order-last md:order-1">
+          <div className="order-last flex w-full justify-between gap-5 md:order-1">
             <button onClick={handlePrevious} disabled={isFirst}>
               Previous
             </button>
@@ -32,8 +32,8 @@ const PortfolioPage = () => {
               Next
             </button>
           </div>
-          <div className="grid gap-4 md:grid-cols-2 grid-rows-1">
-            <div className="grid gap-4 content-center place-items-start">
+          <div className="mt-10 grid grid-rows-1 gap-4 md:grid-cols-2">
+            <div className="grid place-items-start content-center gap-4">
               <h1 className="text-5xl font-bold">{currentProject.title}</h1>
               <p className="text-gray">{currentProject.subTitle}</p>
 
@@ -43,7 +43,7 @@ const PortfolioPage = () => {
                 Visit site
               </Button>
             </div>
-            <div className="flex items-center justify-center mt-[-70px] md:p-10 order-first md:order-2">
+            <div className="order-first mt-[-70px] flex items-center justify-center md:order-2 md:p-10">
               {currentProject.image}
             </div>
           </div>

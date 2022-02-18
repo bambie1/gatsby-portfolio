@@ -10,6 +10,7 @@ module.exports = {
     "gatsby-transformer-remark",
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-fontawesome-css`,
+    `gatsby-plugin-dark-mode`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

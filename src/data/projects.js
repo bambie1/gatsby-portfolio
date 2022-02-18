@@ -1,5 +1,5 @@
-import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 
 export const projects = [
   {
@@ -18,12 +18,12 @@ export const projects = [
     url: "https://www.soplugged.com/",
     image: (
       <StaticImage
-        src="../images/soplugged-mobile-slim.jpg"
+        src="../images/placeholder-2.png"
         alt="SoPlugged screenshot"
         placeholder="blurred"
         objectFit="contain"
-        width={300}
-        height={500}
+        width={313}
+        height={325}
       />
     ),
   },
@@ -47,11 +47,11 @@ export const projects = [
     url: "https://www.livingspringtabernacle.org/",
     image: (
       <StaticImage
-        src="../images/lst-mobile.jpg"
+        src="../images/placeholder-2.png"
         alt="SoPlugged screenshot"
         placeholder="blurred"
-        width={300}
-        height={500}
+        width={313}
+        height={325}
       />
     ),
   },

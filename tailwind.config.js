@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       boxShadow: {
         "3xl": "1px -3px 14px #c4c4c4",
+        "dark-3xl": "1px -3px 14px #090505",
       },
     },
     colors: {
@@ -14,9 +15,7 @@ module.exports = {
       white: "#FDFEFF",
       gray: "#8D8D8D",
       lightGray: "#B5B6B5",
-      blueGray: "#647C90",
-      ivory: "#E2DED0",
-      coolGray: "#4E4F50",
+      lightDark: "#322626",
       gray: "#746C70",
     },
   },

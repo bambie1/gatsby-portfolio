@@ -6,7 +6,7 @@ import Layout from "../components/Layout";
 import SocialLinks from "../components/SocialLinks";
 
 const inputStyle =
-  "focus:ring-4 focus:ring-gray focus:outline-none appearance-none w-full text-sm leading-6 text-black-900 placeholder-gray rounded-md py-2 pl-4 ring-1 ring-gray shadow-sm";
+  "focus:ring-4 focus:ring-gray focus:outline-none appearance-none w-full text-sm leading-6 text-black-900 placeholder-gray rounded-md py-2 pl-4 ring-1 ring-gray shadow-sm dark:text-white border dark:border-white dark:bg-transparent";
 
 const ContactPage = () => {
   return (
@@ -16,12 +16,12 @@ const ContactPage = () => {
         <title>Contact Me | Benaiah Barango</title>
       </Helmet>
       <Layout>
-        <div className="grid gap-4 md:grid-cols-2 grid-rows-1 min-h-[450px]">
-          <div className="grid gap-4 place-items-start content-center">
+        <div className="grid min-h-[450px] grid-rows-1 gap-4 md:grid-cols-2">
+          <div className="grid place-items-start content-center gap-4">
             <h1 className="text-5xl font-bold">CONTACT ME</h1>
             <p className="text-gray">Designer and Front-End Developer</p>
 
-            <form className="grid gap-4 w-full place-items-start max-w-md mt-5">
+            <form className="mt-5 grid w-full max-w-md place-items-start gap-4">
               <input
                 className={inputStyle}
                 type="text"
@@ -29,7 +29,7 @@ const ContactPage = () => {
                 placeholder="E-mail address..."
               />
               <textarea
-                className={`${inputStyle} min-h-[200px] max-h-[300px]`}
+                className={`${inputStyle} max-h-[300px] min-h-[200px]`}
                 type="text"
                 aria-label="Message"
                 placeholder="Type your message..."
