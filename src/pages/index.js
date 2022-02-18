@@ -1,27 +1,27 @@
 import * as React from "react";
-import { Helmet } from "react-helmet";
 
 import Button from "../components/Button";
+import Head from "../components/Head";
 import Layout from "../components/Layout";
 import SocialLinks from "../components/SocialLinks";
 
 const HomePage = () => {
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Benaiah Barango | Designer and Developer</title>
-      </Helmet>
+      <Head title="Benaiah Barango | Designer and developer" />
       <Layout>
-        <div className="grid gap-4 md:grid-cols-2 grid-rows-1 min-h-[450px]">
-          <div className="grid gap-4 place-items-start content-center">
+        <div className="grid min-h-[450px] grid-rows-1 gap-4 md:grid-cols-2">
+          <div className="grid place-items-start content-center gap-4">
             <h1 className="text-5xl font-bold">BENAIAH BARANGO</h1>
-            <p className="text-gray">Designer and Front-End Developer</p>
+            <p className="text-gray dark:text-lightGray">
+              Designer and Front-End Developer
+            </p>
 
             <p className="mb-7">
               Hi there! I'm a UI/UX developer and web consultant, based out of
               Ottawa, Canada.<br></br> I love to create amazing digital
-              experiences for clients with different tools at my disposal.
+              experiences for clients with tools like Javascript, Wordpress, and
+              Shopify.
             </p>
             <Button href="/contact">Let's work together</Button>
           </div>

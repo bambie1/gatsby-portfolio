@@ -1,23 +1,22 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import { StaticImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
 import TextLink from "../components/TextLink";
 import SocialLinks from "../components/SocialLinks";
+import Head from "../components/Head";
 
 const AboutPage = () => {
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>About Me | Benaiah Barango</title>
-      </Helmet>
+      <Head title="About Me | Benaiah Barango" />
       <Layout>
         <div className="grid grid-rows-1 gap-4 md:grid-cols-2">
           <div className="grid content-center gap-4">
             <h1 className="text-5xl font-bold">WHO AM I?</h1>
-            <p className="text-gray mb-4">Who are we all, really..?</p>
+            <p className="text-gray dark:text-lightGray mb-4">
+              Who are we all, really..?
+            </p>
 
             <p>
               Hi friend! I’m Benaiah, a UI/UX developer and web consultant,
@@ -38,7 +37,7 @@ const AboutPage = () => {
               . So, reach out if you're interested
             </p>
 
-            <p>
+            <p className="md:mb-7">
               My other creative outlet is music... specifically the keyboard.
               There's just something about playing a tune you love on the
               keyboard, and putting your twist on it. A close second is playing

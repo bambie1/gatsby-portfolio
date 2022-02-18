@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const linkStyle = `
-px-4 py-2 border-2 rounded-full text-xl hover:text-gray
+px-4 py-2 border-2 rounded-full text-xl hover:text-gray transition duration-150 ease-in-out
 `;
 
 const SocialLinks = ({ row }) => {
@@ -15,7 +15,7 @@ const SocialLinks = ({ row }) => {
     <div
       className={`flex ${row ? "" : "md:flex-col"} md:items-end ${
         row ? "mt-8" : "md:justify-center"
-      } gap-4 mt-10 md:mt-0`}
+      } mt-10 gap-4 md:mt-0`}
     >
       <a
         href="https://www.linkedin.com/in/benaiah-ambie-barango/"
@@ -23,6 +23,7 @@ const SocialLinks = ({ row }) => {
         rel="noreferrer"
         className={linkStyle}
       >
+        <span className="sr-only">LinkedIn</span>
         <FontAwesomeIcon icon={faLinkedinIn} />
       </a>
       <a
@@ -31,6 +32,7 @@ const SocialLinks = ({ row }) => {
         rel="noreferrer"
         className={linkStyle}
       >
+        <span className="sr-only">Github</span>
         <FontAwesomeIcon icon={faGithub} />
       </a>
       <a
@@ -39,6 +41,7 @@ const SocialLinks = ({ row }) => {
         rel="noreferrer"
         className={linkStyle}
       >
+        <span className="sr-only">Twitter</span>
         <FontAwesomeIcon icon={faTwitter} />
       </a>
     </div>

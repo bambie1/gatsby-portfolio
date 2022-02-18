@@ -1,7 +1,7 @@
 import * as React from "react";
-import { Helmet } from "react-helmet";
 
 import Button from "../components/Button";
+import Head from "../components/Head";
 import Layout from "../components/Layout";
 import SocialLinks from "../components/SocialLinks";
 
@@ -11,15 +11,14 @@ const inputStyle =
 const ContactPage = () => {
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Contact Me | Benaiah Barango</title>
-      </Helmet>
+      <Head title="Contact Me | Benaiah Barango" />
       <Layout>
         <div className="grid min-h-[450px] grid-rows-1 gap-4 md:grid-cols-2">
           <div className="grid place-items-start content-center gap-4">
             <h1 className="text-5xl font-bold">CONTACT ME</h1>
-            <p className="text-gray">Designer and Front-End Developer</p>
+            <p className="text-gray dark:text-lightGray">
+              Designer and Front-End Developer
+            </p>
 
             <form className="mt-5 grid w-full max-w-md place-items-start gap-4">
               <input

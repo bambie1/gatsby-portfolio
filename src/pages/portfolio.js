@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Helmet } from "react-helmet";
 
+import Head from "../components/Head";
 import Layout from "../components/Layout";
 import Button from "../components/Button";
 import { projects } from "../data/projects";
@@ -13,29 +13,38 @@ const PortfolioPage = () => {
   const isLast = page === projects.length - 1;
 
   const handleNext = () => setPage(page + 1);
-
   const handlePrevious = () => setPage(page - 1);
+
+  const navButtonStyle =
+    "disabled:cursor-not-allowed border rounded-lg py-1 px-2 disabled:border-transparent disabled:text-gray disabled:opacity-90 hover:opacity-70 transition duration-300 ease-in-out disabled:hover:opacity-100";
 
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Portfolio | Benaiah Barango</title>
-      </Helmet>
+      <Head title="Portfolio | Benaiah Barango" />
       <Layout>
         <div className="grid gap-4 ">
-          <div className="order-last flex w-full justify-between gap-5 md:order-1">
-            <button onClick={handlePrevious} disabled={isFirst}>
+          <div className="flex w-full justify-between gap-5">
+            <button
+              className={navButtonStyle}
+              onClick={handlePrevious}
+              disabled={isFirst}
+            >
               Previous
             </button>
-            <button onClick={handleNext} disabled={isLast}>
+            <button
+              className={navButtonStyle}
+              onClick={handleNext}
+              disabled={isLast}
+            >
               Next
             </button>
           </div>
-          <div className="mt-10 grid grid-rows-1 gap-4 md:grid-cols-2">
+          <div className="mt-28 grid grid-rows-1 gap-4 md:mt-20 md:grid-cols-2">
             <div className="grid place-items-start content-center gap-4">
               <h1 className="text-5xl font-bold">{currentProject.title}</h1>
-              <p className="text-gray">{currentProject.subTitle}</p>
+              <p className="text-gray dark:text-lightGray">
+                {currentProject.subTitle}
+              </p>
 
               {currentProject.description}
 
