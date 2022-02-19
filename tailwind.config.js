@@ -1,6 +1,7 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   darkMode: "class",
+  important: true,
   theme: {
     extend: {
       boxShadow: {

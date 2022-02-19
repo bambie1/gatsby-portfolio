@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
         </div>
 
         <ul className=" hidden gap-8 md:flex">
-          <li className="mr-8 hidden items-center md:flex">
+          <li className="mr-8 hidden items-center text-xl md:flex">
             <ThemeToggler />
           </li>
           <li>
