@@ -1,11 +1,11 @@
 ## 🚀 Portfolio website
 
-  **Tech stack**
+  **Tech stack / Useful tools**
 
-  - Framework : [Gatsby](https://gatsbyjs.com)
-  - Styling: [Tailwind CSS](https://tailwindcss.com)
-    
-    
+  - Framework : <a href="http://gatsbyjs.com/" target="_blank">GatsbyJS</a>  
+  - Styling: <a href="http://tailwindcss.com/" target="_blank">TailwindCSS</a>  
+  - Icons: <a href="http://fontawesome.com/" target="_blank">Fontawesome</a>  
+  - Email client: <a href="https://www.emailjs.com/" target="_blank">EmailJS</a>     
     
 
   **Running locally**
