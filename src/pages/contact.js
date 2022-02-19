@@ -43,7 +43,7 @@ const ContactPage = () => {
           <div className="grid place-items-start content-center gap-4">
             <h1 className="text-5xl font-bold">CONTACT ME</h1>
             <p className="text-gray dark:text-lightGray">
-              Designer and Front-End Developer
+              I'd love to hear from you!
             </p>
 
             <form

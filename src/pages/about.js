@@ -19,9 +19,9 @@ const AboutPage = () => {
             </p>
 
             <p>
-              Hi friend! I’m Benaiah, a UI/UX developer and web consultant,
-              based out of Ottawa, Canada. I love to create amazing digital
-              experiences for clients with different tools at my disposal.
+              I'm Benaiah, a UI/UX developer and web consultant, based out of
+              Ottawa, Canada. I love to create amazing digital experiences for
+              clients with different tools at my disposal.
             </p>
 
             <p>
