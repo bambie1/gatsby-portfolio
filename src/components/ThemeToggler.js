@@ -9,20 +9,16 @@ const ThemeToggler = () => {
       {({ theme, toggleTheme }) => (
         <button>
           <>
-            {theme === "dark" ? (
-              <FontAwesomeIcon
-                icon={faLightbulb}
-                className="cursor-pointer rounded-lg border border-transparent py-1 px-2 transition duration-300 ease-in-out hover:border-black dark:hover:border-white"
-                onClick={() => toggleTheme("light")}
-              />
-            ) : (
-              <FontAwesomeIcon
-                icon={faMoon}
-                className="cursor-pointer rounded-lg border border-transparent py-1 px-2 transition duration-300 ease-in-out hover:border-black dark:hover:border-white"
-                onClick={() => toggleTheme("dark")}
-              />
-            )}
-
+            <FontAwesomeIcon
+              icon={faLightbulb}
+              className="hidden cursor-pointer rounded-lg border border-transparent py-1 px-2 transition duration-300 ease-in-out hover:border-black dark:block dark:hover:border-white"
+              onClick={() => toggleTheme("light")}
+            />
+            <FontAwesomeIcon
+              icon={faMoon}
+              className="cursor-pointer rounded-lg border border-transparent py-1 px-2 transition duration-300 ease-in-out hover:border-black dark:hidden dark:hover:border-white"
+              onClick={() => toggleTheme("dark")}
+            />
             <span className="sr-only">
               {theme === "dark" ? "Toggle light mode" : "Toggle dark mode"}
             </span>
