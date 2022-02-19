@@ -10,11 +10,19 @@
 
   **Running locally**
 
-  Clone repo, and navigate to folder
+  Clone repo, navigate to folder, and run:
 
   ```shell
   npm install
   npm run develop
+  ```
+  
+  To get contact form working as expected, create a `.env.development` file with the following contents
+  
+  ```
+  GATSBY_EMAILJS_SERVICE_ID=
+  GATSBY_EMAILJS_TEMPLATE_ID=
+  GATSBY_EMAILJS_USER_ID=
   ```
 
  **Open the code and start customizing!**
