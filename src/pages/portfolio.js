@@ -16,7 +16,7 @@ const PortfolioPage = () => {
   const handlePrevious = () => setPage(page - 1);
 
   const navButtonStyle =
-    "disabled:cursor-not-allowed border rounded-lg py-1 px-2 disabled:border-transparent disabled:text-gray disabled:opacity-90 hover:opacity-70 transition duration-300 ease-in-out disabled:hover:opacity-100";
+    "disabled:text-lightGray rounded-lg border py-1 px-2 transition duration-300 ease-in-out hover:opacity-70 disabled:cursor-not-allowed disabled:border-transparent disabled:opacity-80 disabled:hover:opacity-80";
 
   return (
     <>

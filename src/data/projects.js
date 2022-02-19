@@ -23,8 +23,7 @@ export const projects = [
         <p className="mb-7">
           It's 100% FREE to enlist your business, or to find a business. So,
           check it out if you're a black entrepreneur, or looking to{" "}
-          <b>#buy-black</b>
-          🙂
+          <b>#buy-black</b> 🙂
         </p>
       </>
     ),

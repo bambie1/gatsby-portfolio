@@ -5,7 +5,12 @@
 html,
 body {
     font-family: "Fira Code";
-    background-color: #1E1111;
-    color: #1E1111;
     overflow-x: hidden;
+    background-color: #E5E8E8;
+    color: #000401;
+}
+
+body.dark {
+    color: #E5E8E8;
+    background-color: #000401;
 }

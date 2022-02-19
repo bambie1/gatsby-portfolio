@@ -1,14 +1,38 @@
-import * as React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import toast, { Toaster } from "react-hot-toast";
 
-import Button from "../components/Button";
 import Head from "../components/Head";
 import Layout from "../components/Layout";
 import SocialLinks from "../components/SocialLinks";
 
 const inputStyle =
-  "focus:ring-4 focus:ring-gray focus:outline-none appearance-none w-full text-sm leading-6 text-black-900 placeholder-gray rounded-md py-2 pl-4 ring-1 ring-gray shadow-sm dark:text-white border dark:border-white dark:bg-transparent";
+  "focus:ring-2 focus:ring-gray dark:focus:ring-lightGray focus:outline-none appearance-none w-full text-sm leading-6 text-black-900 placeholder-gray dark:placeholder-lightGray rounded-md py-2 pl-4  ring-gray shadow-sm dark:text-white border dark:border-white dark:bg-transparent autofill:bg-gray-200";
 
 const ContactPage = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.GATSBY_EMAILJS_SERVICE_ID,
+        process.env.GATSBY_EMAILJS_TEMPLATE_ID,
+        form.current,
+        process.env.GATSBY_EMAILJS_USER_ID
+      )
+      .then((result) => {
+        if (result.status === 200) {
+          toast.success("Message sent successfully!");
+        } else {
+          toast.error("Oops! An error occurred");
+        }
+        form.current.user_email.value = "";
+        form.current.message.value = "";
+      });
+  };
+
   return (
     <>
       <Head title="Contact Me | Benaiah Barango" />
@@ -20,25 +44,40 @@ const ContactPage = () => {
               Designer and Front-End Developer
             </p>
 
-            <form className="mt-5 grid w-full max-w-md place-items-start gap-4">
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              className="mt-5 grid w-full max-w-md place-items-start gap-4"
+              autoComplete="off"
+            >
               <input
                 className={inputStyle}
-                type="text"
+                type="email"
                 aria-label="E-mail address"
                 placeholder="E-mail address..."
+                name="user_email"
+                required
               />
               <textarea
                 className={`${inputStyle} max-h-[300px] min-h-[200px]`}
                 type="text"
                 aria-label="Message"
                 placeholder="Type your message..."
+                name="message"
+                required
               />
 
-              <Button>Send Message</Button>
+              <button
+                type="submit"
+                className="cursor-pointer rounded-lg border-2 bg-black px-4 py-3 text-white transition duration-300 ease-in-out hover:border-black hover:bg-white hover:text-black dark:bg-white dark:text-black dark:hover:border-white dark:hover:bg-black dark:hover:text-white"
+              >
+                Send Message
+              </button>
             </form>
           </div>
 
           <SocialLinks />
+          <Toaster />
         </div>
       </Layout>
     </>

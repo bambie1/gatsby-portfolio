@@ -7,7 +7,7 @@ import ThemeToggler from "./ThemeToggler";
 
 const Layout = ({ children }) => {
   const linkStyle = `
-     hover:text-gray py-2 hover:border-b-2 hover:border-gray transition duration-300 ease-in-out
+     hover:text-gray dark:hover:text-lightGray dark:hover:border-lightGray py-2 hover:border-b-2 hover:border-gray transition duration-300 ease-in-out
     `;
   const activeStyle = `border-b-2 font-bold`;
 
