@@ -14,6 +14,7 @@ const ContactPage = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    form.current.button.disabled = true;
 
     emailjs
       .sendForm(
@@ -30,6 +31,7 @@ const ContactPage = () => {
         }
         form.current.user_email.value = "";
         form.current.message.value = "";
+        form.current.button.disabled = false;
       });
   };
 
@@ -69,7 +71,8 @@ const ContactPage = () => {
 
               <button
                 type="submit"
-                className="cursor-pointer rounded-lg border-2 bg-black px-4 py-3 text-white transition duration-300 ease-in-out hover:border-black hover:bg-white hover:text-black dark:bg-white dark:text-black dark:hover:border-white dark:hover:bg-black dark:hover:text-white"
+                name="button"
+                className="disabled:text-disabledText disabled:bg-disabled dark:disabled:text-disabledText dark:disabled:bg-disabled cursor-pointer rounded-lg border-2 bg-black px-4 py-3 text-white transition duration-300 ease-in-out hover:border-black hover:bg-white hover:text-black disabled:cursor-not-allowed  disabled:border-transparent dark:bg-white dark:text-black dark:hover:border-white dark:hover:bg-black dark:hover:text-white"
               >
                 Send Message
               </button>
