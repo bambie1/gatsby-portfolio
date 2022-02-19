@@ -72,7 +72,7 @@ const Layout = ({ children }) => {
         <main className="my-28">
           {children}
 
-          <div className="shadow-3xl dark:shadow-dark-3xl dark:bg-lightDark container fixed left-3 right-3 bottom-2 z-10 mx-auto flex h-16 w-auto items-center rounded-lg px-3 backdrop-blur-3xl md:hidden">
+          <div className="shadow-3xl dark:shadow-dark-3xl dark:bg-lightDark container fixed left-3 right-3 bottom-2 z-10 mx-auto flex h-16 w-auto items-center rounded-lg bg-white px-3 backdrop-blur-3xl md:hidden">
             <ul className="flex h-[100%] w-[100%] items-center justify-evenly gap-8 overflow-hidden text-sm">
               <li>
                 <Link
