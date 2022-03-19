@@ -15,6 +15,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-dark-mode`,
+    `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -33,6 +34,13 @@ module.exports = {
       options: {
         name: "images",
         path: `${__dirname}/src/images/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-graphcms`,
+      options: {
+        endpoint: process.env.GRAPHCMS_ENDPOINT,
+        buildMarkdownNodes: true,
       },
     },
   ],
