@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const linkStyle = `
-px-4 py-2 border-2 rounded-full text-xl hover:text-gray transition duration-150 ease-in-out
+px-4 py-2 border-2 border-black dark:border-gray-200 hover:dark:border-gray-600 hover:dark:text-gray-600 rounded-full text-xl hover:text-gray-600 hover:border-gray-600 transition duration-150 ease-in-out
 `;
 
 const SocialLinks = ({ row }) => {

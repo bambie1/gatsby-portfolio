@@ -13,7 +13,7 @@ const HomePage = () => {
         <div className="grid min-h-[450px] grid-rows-1 gap-4 md:grid-cols-2">
           <div className="grid place-items-start content-center gap-4">
             <h1 className="text-5xl font-bold">BENAIAH BARANGO</h1>
-            <p className="text-gray dark:text-lightGray">UI/UX Developer</p>
+            <p className="text-gray-600 dark:text-gray-400">UI/UX Developer</p>
 
             <p className="mb-7">
               Hi there! I'm a web consultant, based out of Ottawa, Canada.

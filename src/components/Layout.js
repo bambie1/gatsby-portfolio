@@ -7,12 +7,12 @@ import ThemeToggler from "./ThemeToggler";
 
 const Layout = ({ children }) => {
   const linkStyle = `
-     hover:text-gray dark:hover:text-lightGray dark:hover:border-lightGray py-2 hover:border-b-2 hover:border-gray transition duration-300 ease-in-out
+     hover:text-gray-600 dark:hover:text-lightGray dark:hover:border-lightGray py-2 hover:border-b-2 hover:border-gray-600 transition duration-300 ease-in-out
     `;
-  const activeStyle = `border-b-2 font-bold`;
+  const activeStyle = `border-b-2 border-black font-bold dark:border-gray-200`;
 
   return (
-    <div className="bg-white text-black dark:bg-black dark:text-white">
+    <div className="bg-gray-200 text-black dark:bg-black dark:text-gray-200">
       <nav className="container fixed top-0 left-0 right-0 z-10 mx-auto flex items-center justify-between py-4 pl-4 pr-5 backdrop-blur">
         <Link to="/" className="dark:hidden">
           <StaticImage
@@ -72,7 +72,7 @@ const Layout = ({ children }) => {
         <main className="my-28">
           {children}
 
-          <div className="shadow-3xl dark:shadow-dark-3xl dark:bg-lightDark container fixed left-3 right-3 bottom-2 z-10 mx-auto flex h-16 w-auto items-center rounded-lg bg-white px-3 backdrop-blur-3xl md:hidden">
+          <div className="shadow-3xl dark:shadow-dark-3xl dark:bg-lightDark container fixed left-3 right-3 bottom-2 z-10 mx-auto flex h-16 w-auto items-center rounded-lg bg-gray-200 px-3 backdrop-blur-3xl md:hidden">
             <ul className="flex h-[100%] w-[100%] items-center justify-evenly gap-8 overflow-hidden text-sm">
               <li>
                 <Link

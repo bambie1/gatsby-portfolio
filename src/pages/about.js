@@ -14,7 +14,7 @@ const AboutPage = () => {
         <div className="grid grid-rows-1 gap-4 md:grid-cols-2">
           <div className="grid content-center gap-4">
             <h1 className="text-5xl font-bold">WHO AM I?</h1>
-            <p className="text-gray dark:text-lightGray mb-4">
+            <p className="mb-4 text-gray-600 dark:text-gray-400">
               Who are we all, really..?
             </p>
 

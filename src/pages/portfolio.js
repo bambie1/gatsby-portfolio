@@ -42,7 +42,7 @@ const PortfolioPage = () => {
           <div className="mt-28 grid grid-rows-1 gap-4 md:mt-20 md:grid-cols-2">
             <div className="grid place-items-start content-center gap-4">
               <h1 className="text-5xl font-bold">{currentProject.title}</h1>
-              <p className="text-gray dark:text-lightGray">
+              <p className="text-gray-600 dark:text-gray-200">
                 {currentProject.subTitle}
               </p>
 

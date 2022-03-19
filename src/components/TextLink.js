@@ -5,7 +5,7 @@ const TextLink = ({ children, ...props }) => {
     <a
       {...props}
       target="_blank"
-      className="hover:text-gray underline transition duration-150 ease-in-out"
+      className="underline transition duration-150 ease-in-out hover:text-gray-600"
     >
       {children}
     </a>
