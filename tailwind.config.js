@@ -20,6 +20,9 @@ module.exports = {
         lightGray: "#8D9797",
         lightDark: "#181a1c",
       },
+      borderWidth: {
+        1: "1px",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],

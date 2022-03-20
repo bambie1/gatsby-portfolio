@@ -2,13 +2,14 @@
 title: "My tech stack"
 slug: "/blog/my-tech-stack"
 date: "2021-08-01"
+excerpt: "When I start a new project, I usually reach for familiar tools, libraries, frameworks, etc. This is a quick breakdown of my preferences."
 ---
 
 # My tech stack
 
 When I start a new project, I usually reach for familiar tools, libraries, frameworks, etc. This is a quick breakdown of my preferences.
 
-**TLDR:** Javascript, everythinggg!
+**TL;DR:** Javascript, everythinggg!
 
 - **Design**: *<a href="http://www.figma.com/" target="_blank">Figma</a>*
 
@@ -45,4 +46,4 @@ When I start a new project, I usually reach for familiar tools, libraries, frame
 ---
 
 **CONCLUSION:**
-Thanks for reading! If you have any questions, feel free to leave me a message :)
+Thanks for reading! If you have any questions, feel free to [leave me a message](/contact) :)
