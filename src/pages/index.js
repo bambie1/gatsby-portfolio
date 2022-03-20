@@ -1,11 +1,27 @@
+import { graphql } from "gatsby";
 import * as React from "react";
 
+import BlogCard from "../components/BlogCard";
 import Button from "../components/Button";
 import Head from "../components/Head";
 import Layout from "../components/Layout";
 import SocialLinks from "../components/SocialLinks";
 
-const HomePage = () => {
+export const pageQuery = graphql`
+  query MyQuery {
+    blogs: allMarkdownRemark {
+      nodes {
+        frontmatter {
+          slug
+          title
+        }
+        id
+      }
+    }
+  }
+`;
+
+const HomePage = ({ data: { blogs } }) => {
   return (
     <>
       <Head title="Benaiah Barango | Designer and developer" />
@@ -24,6 +40,17 @@ const HomePage = () => {
           </div>
 
           <SocialLinks />
+        </div>
+
+        <div className="mt-14">
+          <h2 className="mb-8 text-3xl font-bold underline">Articles</h2>
+          <ul className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {blogs.nodes?.map((blog) => (
+              <li key={blog.frontmatter.slug}>
+                <BlogCard blog={blog} />
+              </li>
+            ))}
+          </ul>
         </div>
       </Layout>
     </>

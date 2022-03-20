@@ -15,6 +15,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-dark-mode`,
+    `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -35,5 +36,13 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/blog`,
+      },
+    },
+    `gatsby-transformer-remark`,
   ],
 };

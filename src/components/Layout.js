@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
 import "@fontsource/fira-code";
-import { StaticImage } from "gatsby-plugin-image";
 
-import ThemeToggler from "./ThemeToggler";
+import Footer from "./Footer";
+import Header from "./Header";
 
 const Layout = ({ children }) => {
   const linkStyle = `
@@ -13,60 +13,7 @@ const Layout = ({ children }) => {
 
   return (
     <div className="bg-gray-200 text-black dark:bg-black dark:text-gray-200">
-      <nav className="container fixed top-0 left-0 right-0 z-10 mx-auto flex items-center justify-between py-4 pl-4 pr-5 backdrop-blur">
-        <Link to="/" className="dark:hidden">
-          <StaticImage
-            src="../images/light-logo.png"
-            width={37}
-            height={35}
-            alt="Brand logo"
-          />
-        </Link>
-        <Link to="/" className="hidden dark:block">
-          <StaticImage
-            src="../images/dark-logo.png"
-            width={37}
-            height={35}
-            alt="Brand logo"
-          />
-        </Link>
-        <div className="text-2xl md:hidden">
-          <ThemeToggler />
-        </div>
-
-        <ul className=" hidden gap-8 md:flex">
-          <li className="mr-8 hidden items-center text-xl md:flex">
-            <ThemeToggler />
-          </li>
-          <li>
-            <Link
-              to="/about"
-              className={linkStyle}
-              activeClassName={activeStyle}
-            >
-              About Me
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/portfolio"
-              className={linkStyle}
-              activeClassName={activeStyle}
-            >
-              Portfolio
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/contact"
-              className={linkStyle}
-              activeClassName={activeStyle}
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      <Header />
 
       <div className=" container mx-auto flex min-h-screen w-full flex-col justify-between px-5">
         <main className="my-28">
@@ -105,9 +52,7 @@ const Layout = ({ children }) => {
           </div>
         </main>
 
-        <footer className="mb-24 md:mb-0">
-          <p>Copyright {new Date().getFullYear()}</p>
-        </footer>
+        <Footer />
       </div>
     </div>
   );

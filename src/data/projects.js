@@ -54,7 +54,7 @@ export const projects = [
           I opted for WordPress as my weapon of choice since the site was going
           to be maintained and updated by non-developers (different ways to
           solve a problem). Given the huge demand for ways to donate online in
-          recent yearsr, I also added an embedded{" "}
+          recent years, I also added an embedded{" "}
           <TextLink href="https://kweeve.com/">Kweeve</TextLink> form to make it
           easy for members to give wherever they are
         </p>
