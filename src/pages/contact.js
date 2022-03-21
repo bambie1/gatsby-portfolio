@@ -7,7 +7,7 @@ import Layout from "../components/Layout";
 import SocialLinks from "../components/SocialLinks";
 
 const inputStyle =
-  "focus:ring-2 focus:ring-gray-600 dark:focus:ring-gray-200 focus:outline-none appearance-none w-full text-sm leading-6 text-black placeholder-gray-600 dark:placeholder-gray-400 rounded-md py-2 pl-4  ring-gray-600 shadow-sm dark:text-gray-200 border border-black dark:border-gray-400 dark:bg-transparent autofill:bg-gray-200";
+  "focus:ring-2 focus:ring-gray-600 dark:focus:ring-gray-200 focus:outline-none appearance-none w-full text-sm leading-6 text-black placeholder-gray-600 dark:placeholder-gray-400 rounded-md py-2 pl-4  ring-gray-600 shadow-sm dark:text-gray-200 border border-black dark:border-gray-400 bg-transparent autofill:bg-gray-200";
 
 const ContactPage = () => {
   const form = useRef();
@@ -49,25 +49,43 @@ const ContactPage = () => {
             <form
               ref={form}
               onSubmit={sendEmail}
-              className="mt-5 grid w-full max-w-md place-items-start gap-4"
+              className="mt-5 grid w-full max-w-md place-items-start gap-6"
               autoComplete="off"
             >
-              <input
-                className={inputStyle}
-                type="email"
-                aria-label="E-mail address"
-                placeholder="E-mail address..."
-                name="user_email"
-                required
-              />
-              <textarea
-                className={`${inputStyle} max-h-[300px] min-h-[200px]`}
-                type="text"
-                aria-label="Message"
-                placeholder="Type your message..."
-                name="message"
-                required
-              />
+              <div className="w-full">
+                <label
+                  htmlFor="user_email"
+                  class="block text-sm font-medium text-gray-700 dark:text-gray-400"
+                >
+                  Email
+                </label>
+                <div class="mt-1">
+                  <input
+                    type="email"
+                    name="user_email"
+                    id="user_email"
+                    className={inputStyle}
+                    required
+                  />
+                </div>
+              </div>
+              <div className="w-full">
+                <label
+                  htmlFor="message"
+                  class="block text-sm font-medium text-gray-700 dark:text-gray-400"
+                >
+                  Message
+                </label>
+                <div class="mt-1">
+                  <textarea
+                    className={`${inputStyle} max-h-[300px] min-h-[200px]`}
+                    type="text"
+                    aria-label="Message"
+                    name="message"
+                    required
+                  />
+                </div>
+              </div>
 
               <button
                 type="submit"

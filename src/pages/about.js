@@ -30,7 +30,7 @@ const AboutPage = () => {
               a Javascript Engineer on the API Integrations team. My focus is
               building out features/tools that help existing and new partners
               easily integrate Fullscript into their practice.<br></br> We're
-              currently{" "}
+              always{" "}
               <TextLink href="https://fullscript.com/careers#jobs">
                 hiring
               </TextLink>
@@ -40,8 +40,8 @@ const AboutPage = () => {
             <p className="md:mb-7">
               My other creative outlet is music... specifically the keyboard.
               There's just something about playing a tune you love on the
-              keyboard, and putting your twist on it. A close second is playing
-              table-tennis. Slicing... smashing... spinning.
+              keyboard, and putting your twist on it. A close-second is playing
+              table-tennis. <i>Slicing... smashing... spinning</i>.
             </p>
 
             <SocialLinks row />
