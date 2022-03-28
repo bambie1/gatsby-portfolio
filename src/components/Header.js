@@ -11,7 +11,7 @@ const Header = () => {
   const activeStyle = `border-b-2 border-black font-bold dark:border-gray-200`;
 
   return (
-    <nav className="container fixed top-0 left-0 right-0 z-10 mx-auto flex items-center justify-between py-4 pl-4 pr-5 backdrop-blur">
+    <nav className="container fixed top-0 left-0 right-0 z-10 mx-auto flex items-center justify-between py-4 pl-4 pr-5 backdrop-blur firefox:bg-gray-200 firefox:dark:bg-black">
       <Link to="/" className="dark:hidden">
         <StaticImage
           src="../images/light-logo.png"

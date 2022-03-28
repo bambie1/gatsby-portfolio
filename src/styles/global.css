@@ -4,13 +4,18 @@
 
 html,
 body {
-    font-family: "Fira Code";
-    overflow-x: hidden;
-    background-color: #E5E8E8;
-    color: #000401;
+  font-family: "Fira Code";
+  overflow-x: hidden;
+  background-color: #e5e8e8;
+  color: #000401;
 }
 
 body.dark {
-    color: #E5E8E8;
-    background-color: #000401;
+  color: #e5e8e8;
+  background-color: #000401;
+}
+
+.mask-image {
+  mask-image: -webkit-radial-gradient(white, black);
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
 }

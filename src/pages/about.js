@@ -47,7 +47,7 @@ const AboutPage = () => {
             <SocialLinks row />
           </div>
 
-          <div className="order-first mb-10 flex h-[200px] items-start justify-center justify-self-center  overflow-hidden rounded-[56px] md:order-2 md:mb-0 md:h-auto md:items-center md:rounded-none">
+          <div className="mask-image order-first mb-10 flex h-[200px] items-start justify-center self-center justify-self-center overflow-hidden rounded-[56px]  md:order-2 md:mb-0 md:h-auto md:items-center">
             <StaticImage
               src="../images/profile.jpg"
               alt="Profile picture"
