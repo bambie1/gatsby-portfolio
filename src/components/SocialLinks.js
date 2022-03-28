@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const linkStyle = `
-px-4 py-2 border-2 border-black dark:border-gray-200 hover:dark:border-gray-600 hover:dark:text-gray-600 rounded-full text-xl hover:text-gray-600 hover:border-gray-600 transition duration-150 ease-in-out
+px-4 py-2 border border-gray-600 dark:border-gray-200 hover:dark:border-gray-600 hover:dark:text-gray-600 rounded-full text-xl hover:text-gray-600 hover:border-gray-600 transition duration-150 ease-in-out
 `;
 
 const SocialLinks = ({ row }) => {
@@ -24,7 +24,10 @@ const SocialLinks = ({ row }) => {
         className={linkStyle}
       >
         <span className="sr-only">LinkedIn</span>
-        <FontAwesomeIcon icon={faLinkedinIn} />
+        <FontAwesomeIcon
+          icon={faLinkedinIn}
+          className="text-gray-600 dark:text-gray-200"
+        />
       </a>
       <a
         href="https://github.com/bambie1"
@@ -33,7 +36,10 @@ const SocialLinks = ({ row }) => {
         className={linkStyle}
       >
         <span className="sr-only">Github</span>
-        <FontAwesomeIcon icon={faGithub} />
+        <FontAwesomeIcon
+          icon={faGithub}
+          className="text-gray-600 dark:text-gray-200"
+        />
       </a>
       <a
         href="https://twitter.com/BenaiahBarango"
@@ -42,7 +48,10 @@ const SocialLinks = ({ row }) => {
         className={linkStyle}
       >
         <span className="sr-only">Twitter</span>
-        <FontAwesomeIcon icon={faTwitter} />
+        <FontAwesomeIcon
+          icon={faTwitter}
+          className="text-gray-600 dark:text-gray-200"
+        />
       </a>
     </div>
   );

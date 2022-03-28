@@ -2,6 +2,8 @@
 title: "My tech stack"
 slug: "/blog/my-tech-stack"
 date: "2021-08-01"
+next: "Prototype first, code later"
+next_slug: "prototype-first-code-later"
 excerpt: "When I start a new project, I usually reach for familiar tools, libraries, frameworks, etc. This is a quick breakdown of my preferences."
 ---
 
@@ -28,8 +30,8 @@ When I start a new project, I usually reach for familiar tools, libraries, frame
 
 - **Styling (CSS)**: *It's complicated*
 
-  There's 3 options for this: TailwindCSS, Material-UI, or SCSS (plus Reach.tech).
-  I'm currently on the Tailwind train, primarily because of the significantly less number of CSS files I create, AND their amazing documentation. These two pros overshadow the obvious lengthy class names.
+  There's usually 3 options for this: <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>, <a href="https://mui.com/" target="_blank">Material-UI</a>, or custom SCSS (with <a href="https://reach.tech/" target="_blank">Reach UI</a> for simple accessible components).
+  I'm currently on the Tailwind-train, primarily because of the significantly less number of CSS files I create, AND their amazing documentation. These two pros overshadow the obvious lengthy class names.
 
 
 
