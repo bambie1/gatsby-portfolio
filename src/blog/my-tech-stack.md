@@ -11,7 +11,6 @@ excerpt: "When I start a new project, I usually reach for familiar tools, librar
 
 When I start a new project, I usually reach for familiar tools, libraries, frameworks, etc. This is a quick breakdown of my preferences.
 
-**TL;DR:** Javascript, everythinggg!
 
 - **Design**: *<a href="http://www.figma.com/" target="_blank">Figma</a>*
 
